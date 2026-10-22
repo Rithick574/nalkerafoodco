@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nalkera Foodco — website
 
-## Getting Started
-
-First, run the development server:
+Landing page for Nalkera Foodco (Poochol, Kerala). Next.js 15 (App Router), TypeScript, Tailwind CSS v4, Motion, Lucide.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # http://localhost:3000
+npm run build && npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `src/app/` — layout (fonts, SEO/Open Graph), page, robots, sitemap, icons, self-hosted Malayalam font
+- `src/components/` — `Header`, `HeroSection`, `AboutSection`, `ProductShowcase`, `HeritageSection`, `BrandValues`, `ContactSection`, `Footer`, `FloatingWhatsAppButton`
+- `src/components/ui/` — shared primitives (`SplitText`, `Reveal`, `ButtonLink`, `Palm` illustrations, …)
+- `src/lib/site.ts` — contact details, nav links, WhatsApp helper (edit contact info here)
+- `src/lib/motion.ts` — shared easing and animation variants
+- `src/app/globals.css` — design tokens (colours, fonts, keyframes)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Brand assets
 
-## Learn More
+All product imagery is cut out of the official inauguration poster (1211×1511 px), so it is
+low resolution. Replace these files in `public/images/` with official originals when available
+(same names, transparent PNG):
 
-To learn more about Next.js, take a look at the following resources:
+| File | Needed original |
+| --- | --- |
+| `nalkera-logo.png` | Vector logo (SVG) — the poster crop has a soft left edge |
+| `nalkera-coconut-oil-bottles.png` | High-res packshot of both bottles, transparent background |
+| `nalkera-coconut-oil-1l.png` | High-res packshot of the 1 Ltr bottle |
+| `coconut.png` | High-res coconut photograph |
+| `nalla-keralathinte-ruchi.png` | Vector of the Malayalam tagline lettering |
+| `og-image.jpg` | Regenerate from the high-res assets |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Not yet on the site because they are unverified: the smaller bottle's pack size, social media
+profiles, and any claims about processing, sourcing or certification.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Malayalam font
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`src/app/fonts/baloo-chettan-2-ml.woff2` is a Malayalam + basic Latin subset of Baloo Chettan 2 (OFL).
+The font's `MAL` language system leaves out conjunct ligatures, so text marked `lang="ml"` rendered
+in reformed style. That record is removed from this subset so conjuncts render in traditional style.
