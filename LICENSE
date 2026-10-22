@@ -1,0 +1,28 @@
+Copyright (c) 2026 Nalkera Foodco. All rights reserved.
+
+This repository and its contents — including source code, design, copy, the Nalkera
+name and logo, product photography, packaging artwork and Malayalam lettering — are the
+proprietary property of Nalkera Foodco, Poochol, Kerala, India.
+
+No part of this repository may be copied, modified, distributed, published, sublicensed
+or used, in whole or in part, without prior written permission from Nalkera Foodco.
+
+The Nalkera name, logo and packaging are trademarks or brand assets of Nalkera Foodco and
+are not licensed for any use by this file.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+
+Contact: +91 73560 45804 · www.nalkera.com
+
+
+THIRD-PARTY COMPONENTS
+----------------------
+
+The following third-party components are not owned by Nalkera Foodco and remain under
+their own licenses:
+
+- Baloo Chettan 2 font (Malayalam subset in src/app/fonts/) — SIL Open Font License 1.1,
+  see src/app/fonts/BalooChettan2-OFL.txt
+- Fraunces and Manrope fonts (loaded through next/font/google) — SIL Open Font License 1.1
+- npm dependencies listed in package.json (Next.js, React, Motion, Lucide, Tailwind CSS
+  and others) — each under the license included in its package
