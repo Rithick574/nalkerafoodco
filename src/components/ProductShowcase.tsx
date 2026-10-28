@@ -15,17 +15,17 @@ const views = [
   {
     key: "single",
     label: "1 Ltr bottle",
-    src: "/images/nalkera-coconut-oil-1l.png",
-    width: 290,
-    height: 1118,
+    src: "/images/brand/nalkera-coconut-oil-1l.png",
+    width: 554,
+    height: 1954,
     alt: "Nalkera Coconut Oil 1 litre bottle with a green cap and a label reading വെളിച്ചെണ്ണ Coconut Oil",
   },
   {
     key: "pair",
     label: "Both bottles",
-    src: "/images/nalkera-coconut-oil-bottles.png",
-    width: 448,
-    height: 1118,
+    src: "/images/brand/nalkera-coconut-oil-bottles.png",
+    width: 836,
+    height: 1954,
     alt: "Two Nalkera Coconut Oil bottles side by side",
   },
 ] as const;
@@ -112,7 +112,7 @@ export function ProductShowcase() {
             transition={{ duration: 1.4, ease, delay: 0.5 }}
             className="absolute -right-2 bottom-[2%] w-[38%] sm:right-[2%]"
           >
-            <Image src="/images/coconut.png" alt="" width={680} height={648} sizes="220px" className="h-auto w-full -scale-x-100 drop-shadow-[0_20px_20px_rgba(4,63,37,0.3)]" />
+            <Image src="/images/brand/coconut.png" alt="" width={1357} height={1177} sizes="220px" className="h-auto w-full -scale-x-100 drop-shadow-[0_20px_20px_rgba(4,63,37,0.3)]" />
           </motion.div>
         </div>
 

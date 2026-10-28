@@ -68,10 +68,10 @@ export function HeritageSection() {
           >
             <div aria-hidden className="absolute inset-[8%] -z-10 rounded-full bg-leaf/50 blur-3xl" />
             <Image
-              src="/images/nalla-keralathinte-ruchi.png"
+              src="/images/brand/nalla-keralathinte-ruchi.png"
               alt=""
-              width={340}
-              height={245}
+              width={1571}
+              height={1095}
               sizes="380px"
               className="h-auto w-full"
             />

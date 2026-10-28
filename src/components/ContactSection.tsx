@@ -78,7 +78,7 @@ export function ContactSection() {
             </motion.div>
           </div>
 
-          <div className="relative mx-auto hidden aspect-[3/4] w-full max-w-[380px] lg:block">
+          <div className="relative mx-auto hidden aspect-square w-full max-w-[460px] lg:block">
             <motion.div
               aria-hidden
               initial={{ scale: 0.8, opacity: 0 }}
@@ -92,15 +92,15 @@ export function ContactSection() {
               whileInView={{ opacity: 1, y: 0, rotate: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 1.4, ease, delay: 0.2 }}
-              className="absolute inset-0 flex justify-center"
+              className="absolute inset-0 flex items-center justify-center"
             >
               <Image
-                src="/images/nalkera-coconut-oil-bottles.png"
-                alt="Nalkera Coconut Oil bottles"
-                width={448}
-                height={1118}
-                sizes="300px"
-                className="h-full w-auto drop-shadow-[0_40px_40px_rgba(0,0,0,0.35)]"
+                src="/images/brand/nalkera-coconut-oil-with-coconut.png"
+                alt="Nalkera Coconut Oil bottles beside a halved coconut"
+                width={1587}
+                height={1571}
+                sizes="460px"
+                className="h-auto w-full drop-shadow-[0_40px_40px_rgba(0,0,0,0.35)]"
               />
             </motion.div>
           </div>

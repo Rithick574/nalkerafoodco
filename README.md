@@ -19,21 +19,24 @@ npm run build && npm start
 
 ## Brand assets
 
-All product imagery is cut out of the official inauguration poster (1211×1511 px), so it is
-low resolution. Replace these files in `public/images/` with official originals when available
-(same names, transparent PNG):
+Official images from the design team live in `public/images/brand/`, trimmed from the original
+2160×2700 canvases. The untouched originals are kept in `design/originals/` (not deployed).
 
-| File | Needed original |
+| File | Source original |
 | --- | --- |
-| `nalkera-logo.png` | Vector logo (SVG) — the poster crop has a soft left edge |
-| `nalkera-coconut-oil-bottles.png` | High-res packshot of both bottles, transparent background |
-| `nalkera-coconut-oil-1l.png` | High-res packshot of the 1 Ltr bottle |
-| `coconut.png` | High-res coconut photograph |
-| `nalla-keralathinte-ruchi.png` | Vector of the Malayalam tagline lettering |
-| `og-image.jpg` | Regenerate from the high-res assets |
+| `nalkera-logo.png` | `logo.png` |
+| `nalkera-coconut-oil-bottles.png` | `bottle 2.png` |
+| `nalkera-coconut-oil-1l.png` | `1 ltr bottle.png` |
+| `nalkera-coconut-oil-with-coconut.png` | `bottle with coco.png` |
+| `coconut.png` | `coco.png` |
+| `nalla-keralathinte-ruchi.png` | `nalla keralathinte ruchi.png` |
 
-Not yet on the site because they are unverified: the smaller bottle's pack size, social media
-profiles, and any claims about processing, sourcing or certification.
+`og-image.jpg` and the app icons in `src/app/` are generated from these. `pattern.webp` is a
+generated background texture inspired by the poster.
+
+`500 ml bottle.png` is not used yet: its label artwork reads "Net Wt 1 Ltr", so the 500 ml size
+needs confirming with the design team before it goes on the site. Also not on the site because
+they are unverified: social media profiles, and any claims about processing, sourcing or certification.
 
 ## Malayalam font
 

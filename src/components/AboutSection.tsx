@@ -46,10 +46,10 @@ export function AboutSection() {
                 നല്ല
               </p>
               <Image
-                src="/images/coconut.png"
+                src="/images/brand/coconut.png"
                 alt="A halved coconut with fresh white flesh and a drop of golden oil"
-                width={680}
-                height={648}
+                width={1357}
+                height={1177}
                 sizes="(min-width: 1024px) 420px, 80vw"
                 className="absolute bottom-[10%] left-1/2 h-auto w-[86%] -translate-x-1/2 drop-shadow-[0_30px_30px_rgba(0,0,0,0.3)]"
               />

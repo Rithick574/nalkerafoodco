@@ -145,10 +145,10 @@ export function HeroSection() {
                 className="h-full"
               >
                 <Image
-                  src="/images/nalkera-coconut-oil-bottles.png"
+                  src="/images/brand/nalkera-coconut-oil-bottles.png"
                   alt="Two Nalkera Coconut Oil bottles with green caps and വെളിച്ചെണ്ണ Coconut Oil labels"
-                  width={448}
-                  height={1118}
+                  width={836}
+                  height={1954}
                   priority
                   sizes="(min-width: 1024px) 260px, 200px"
                   className="h-full w-auto drop-shadow-[0_30px_30px_rgba(4,63,37,0.35)]"
@@ -170,10 +170,10 @@ export function HeroSection() {
               transition={{ duration: 1.4, ease, delay: 0.8 }}
             >
               <Image
-                src="/images/coconut.png"
+                src="/images/brand/coconut.png"
                 alt=""
-                width={680}
-                height={648}
+                width={1357}
+                height={1177}
                 priority
                 sizes="(min-width: 1024px) 260px, 45vw"
                 className="h-auto w-full drop-shadow-[0_24px_24px_rgba(4,63,37,0.3)]"

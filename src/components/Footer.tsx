@@ -8,7 +8,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-5 pb-10 pt-20 md:px-8">
         <div className="grid gap-14 md:grid-cols-[1.5fr_1fr_1fr] md:gap-10">
           <div className="max-w-sm">
-            <Image src="/images/nalkera-logo.png" alt="Nalkera Foodco" width={768} height={320} sizes="150px" className="h-auto w-[150px]" />
+            <Image src="/images/brand/nalkera-logo.png" alt="Nalkera Foodco" width={1429} height={673} sizes="150px" className="h-auto w-[150px]" />
             <p className="mt-6 leading-relaxed text-ivory/70">{site.description}</p>
             <p lang="ml" className="mt-5 font-ml text-lg text-lime">
               {site.taglineMl}

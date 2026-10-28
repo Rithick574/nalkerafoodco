@@ -74,10 +74,10 @@ export function Header() {
         <nav aria-label="Primary" className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 md:px-8">
           <a href="#home" className="shrink-0" onClick={() => setOpen(false)}>
             <Image
-              src="/images/nalkera-logo.png"
+              src="/images/brand/nalkera-logo.png"
               alt="Nalkera Foodco"
-              width={768}
-              height={320}
+              width={1429}
+              height={673}
               priority
               sizes="140px"
               className={cn("h-auto transition-[width] duration-500 ease-organic", solid ? "w-[104px]" : "w-[118px] md:w-[132px]")}

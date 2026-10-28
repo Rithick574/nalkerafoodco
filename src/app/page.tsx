@@ -15,7 +15,7 @@ const jsonLd = {
   name: site.company,
   alternateName: site.brand,
   url: site.url,
-  logo: `${site.url}/images/nalkera-logo.png`,
+  logo: `${site.url}/images/brand/nalkera-logo.png`,
   telephone: "+91-7356045804",
   address: { "@type": "PostalAddress", addressLocality: "Poochol", addressRegion: "Kerala", addressCountry: "IN" },
   contactPoint: { "@type": "ContactPoint", telephone: "+91-7356045804", contactType: "customer service", areaServed: "IN" },
