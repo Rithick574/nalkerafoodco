@@ -27,6 +27,8 @@ Official images from the design team live in `public/images/brand/`, trimmed fro
 | `nalkera-logo.png` | `logo.png` |
 | `nalkera-coconut-oil-bottles.png` | `bottle 2.png` |
 | `nalkera-coconut-oil-1l.png` | `1 ltr bottle.png` |
+| `nalkera-coconut-oil-500ml.png` | `500 ml bottle.png`, size text retouched to "500 ml" |
+| `nalkera-coconut-oil-300ml.png` | `500 ml bottle.png`, size text retouched to "300 ml" |
 | `nalkera-coconut-oil-with-coconut.png` | `bottle with coco.png` |
 | `coconut.png` | `coco.png` |
 | `nalla-keralathinte-ruchi.png` | `nalla keralathinte ruchi.png` |
@@ -34,9 +36,14 @@ Official images from the design team live in `public/images/brand/`, trimmed fro
 `og-image.jpg` and the app icons in `src/app/` are generated from these. `pattern.webp` is a
 generated background texture inspired by the poster.
 
-`500 ml bottle.png` is not used yet: its label artwork reads "Net Wt 1 Ltr", so the 500 ml size
-needs confirming with the design team before it goes on the site. Also not on the site because
-they are unverified: social media profiles, and any claims about processing, sourcing or certification.
+The product section slides through the pack sizes (1 Ltr → 500 ml → 300 ml) as you scroll; sizes
+are configured in `src/components/ProductShowcase.tsx`. Pending from the design team:
+- final 500 ml and 300 ml packshots. The supplied 500 ml file's label read "Net Wt 1 Ltr", so its
+  size text was retouched to "500 ml" / "300 ml" (Barlow Condensed ExtraBold, matched to the label);
+  the 300 ml step reuses the 500 ml bottle shape, drawn smaller.
+
+Not on the site because they are unverified: social media profiles, and any claims about
+processing, sourcing or certification.
 
 ## Malayalam font
 

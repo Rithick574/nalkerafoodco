@@ -6,23 +6,34 @@ import { whatsappLink } from "@/lib/site";
 import { ease } from "@/lib/motion";
 import { WhatsAppIcon } from "./ui/WhatsAppIcon";
 
-/** Appears once the hero is passed; steps aside while the contact section is on screen. */
+// Sections that carry their own WhatsApp button; the floating one steps aside while they are on screen.
+const SECTIONS_WITH_CTA = ["products", "order", "contact"];
+
+/** Appears once the hero is passed; hides over sections that already offer WhatsApp. */
 export function FloatingWhatsAppButton() {
   const { scrollY } = useScroll();
   const [pastHero, setPastHero] = useState(false);
-  const [contactVisible, setContactVisible] = useState(false);
+  const [ctaVisible, setCtaVisible] = useState(false);
 
   useMotionValueEvent(scrollY, "change", (v) => setPastHero(v > window.innerHeight * 0.7));
 
   useEffect(() => {
-    const el = document.getElementById("contact");
-    if (!el) return;
-    const io = new IntersectionObserver(([e]) => setContactVisible(e.isIntersecting), { threshold: 0.15 });
-    io.observe(el);
+    const visible = new Set<string>();
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => (e.isIntersecting ? visible.add(e.target.id) : visible.delete(e.target.id)));
+        setCtaVisible(visible.size > 0);
+      },
+      { threshold: 0.15 },
+    );
+    SECTIONS_WITH_CTA.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) io.observe(el);
+    });
     return () => io.disconnect();
   }, []);
 
-  const show = pastHero && !contactVisible;
+  const show = pastHero && !ctaVisible;
 
   return (
     <AnimatePresence>

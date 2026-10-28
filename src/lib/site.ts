@@ -26,15 +26,16 @@ export const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About Us" },
   { href: "#products", label: "Our Products" },
+  { href: "#order", label: "Order" },
   { href: "#story", label: "Our Story" },
   { href: "#contact", label: "Contact" },
 ] as const;
 
 export const footerLinks = [
-  ...navLinks.slice(0, 4),
+  ...navLinks.filter((l) => l.href !== "#contact"),
   { href: "#reviews", label: "Reviews" },
   { href: "#find-us", label: "Find Us" },
-  navLinks[4],
+  { href: "#contact", label: "Contact" },
 ] as const;
 
 export function cn(...classes: Array<string | false | null | undefined>) {

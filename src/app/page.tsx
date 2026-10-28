@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ProductShowcase } from "@/components/ProductShowcase";
+import { OrderSection } from "@/components/OrderSection";
 import { HeritageSection } from "@/components/HeritageSection";
 import { BrandValues } from "@/components/BrandValues";
 import { ReviewsSection } from "@/components/ReviewsSection";
@@ -43,6 +44,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ProductShowcase />
+        <OrderSection />
         <HeritageSection />
         <BrandValues />
         <ReviewsSection />
