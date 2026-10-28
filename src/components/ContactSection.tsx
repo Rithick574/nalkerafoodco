@@ -13,7 +13,7 @@ import { PalmFrond } from "./ui/Palm";
 
 const details = [
   { icon: Phone, label: "Call", value: site.phoneDisplay, href: site.phoneHref },
-  { icon: MapPin, label: "Visit", value: site.location },
+  { icon: MapPin, label: "Visit", value: site.location, href: site.mapsUrl },
   { icon: Globe, label: "Online", value: site.website, href: site.url },
 ];
 

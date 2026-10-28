@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { navLinks, site, whatsappLink } from "@/lib/site";
+import { footerLinks, site, whatsappLink } from "@/lib/site";
 import { CurrentYear } from "./ui/CurrentYear";
 
 export function Footer() {
@@ -18,7 +18,7 @@ export function Footer() {
           <nav aria-label="Footer">
             <h2 className="text-[0.68rem] font-bold uppercase tracking-[0.26em] text-ivory/45">Explore</h2>
             <ul className="mt-5 space-y-3">
-              {navLinks.map((l) => (
+              {footerLinks.map((l) => (
                 <li key={l.href}>
                   <a href={l.href} className="text-ivory/80 transition-colors hover:text-lime">
                     {l.label}
@@ -41,7 +41,11 @@ export function Footer() {
                   WhatsApp
                 </a>
               </li>
-              <li>{site.location}</li>
+              <li>
+                <a href={site.mapsUrl} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-lime">
+                  {site.location}
+                </a>
+              </li>
               <li>
                 <a href={site.url} className="transition-colors hover:text-lime">
                   {site.website}

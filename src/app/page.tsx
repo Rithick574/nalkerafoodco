@@ -4,6 +4,8 @@ import { AboutSection } from "@/components/AboutSection";
 import { ProductShowcase } from "@/components/ProductShowcase";
 import { HeritageSection } from "@/components/HeritageSection";
 import { BrandValues } from "@/components/BrandValues";
+import { ReviewsSection } from "@/components/ReviewsSection";
+import { LocationSection } from "@/components/LocationSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsAppButton } from "@/components/FloatingWhatsAppButton";
@@ -18,6 +20,12 @@ const jsonLd = {
   logo: `${site.url}/images/brand/nalkera-logo.png`,
   telephone: "+91-7356045804",
   address: { "@type": "PostalAddress", addressLocality: "Poochol", addressRegion: "Kerala", addressCountry: "IN" },
+  location: {
+    "@type": "Place",
+    name: site.company,
+    hasMap: site.mapsUrl,
+    geo: { "@type": "GeoCoordinates", ...site.geo },
+  },
   contactPoint: { "@type": "ContactPoint", telephone: "+91-7356045804", contactType: "customer service", areaServed: "IN" },
 };
 
@@ -37,6 +45,8 @@ export default function Home() {
         <ProductShowcase />
         <HeritageSection />
         <BrandValues />
+        <ReviewsSection />
+        <LocationSection />
         <ContactSection />
       </main>
       <Footer />
