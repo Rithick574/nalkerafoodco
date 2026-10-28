@@ -38,7 +38,7 @@ export function ButtonLink({ href, variant = "primary", icon, size = "md", class
       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       {...rest}
       className={cn(
-        "group relative isolate inline-flex items-center justify-center overflow-hidden rounded-full font-semibold tracking-[0.01em] transition-[color,box-shadow,border-color,transform] duration-500 ease-organic active:scale-[0.97]",
+        "group relative isolate inline-flex items-center justify-center overflow-hidden whitespace-nowrap rounded-full font-semibold tracking-[0.01em] transition-[color,box-shadow,border-color,transform] duration-500 ease-organic active:scale-[0.97]",
         size === "lg" ? "h-12 px-5 text-sm sm:h-14 sm:px-8 sm:text-[0.95rem]" : "h-12 px-6 text-sm",
         v.base,
         className,

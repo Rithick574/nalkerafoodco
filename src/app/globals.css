@@ -43,6 +43,9 @@
   }
 }
 
+/* Phones with little vertical room (iPhone SE with Safari's toolbars showing) */
+@custom-variant short (@media (max-height: 640px));
+
 @theme inline {
   --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
